@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Chat Test</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<h2>LLM Chat Interface</h2>
+
+<label>User:</label>
+<select id="user" onchange="renderAllMessages()">
+    <option value="user1">Alice</option>
+    <option value="user2">Bob</option>
+</select>
+
+<br><br>
+
+<div id="outputDiv" style="height:75vh;overflow-y:auto;scroll-behavior:smooth"></div>
+
+<br>
+
+<div style="display:flex;justify-content:center;">
+    <input id="prompt" placeholder="Enter your prompt" size="50" style="margin-left:5px;mergin-right:5px">
+    <button id="sendPrompt" style="margin-left:5px;mergin-right:5px" onclick="sendPrompt()">Send</button>
+    <button style="margin-left:5px;mergin-right:5px" onclick="clearMessages()">Clear Chat History</button>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

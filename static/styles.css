@@ -1,0 +1,13 @@
+.promptMessage {
+    background-color: rgba(0, 150, 200, 0.4);
+    width: fit-content;
+    float: right;
+    margin-right: 30px;
+}
+
+.responseMessage {
+    background-color: rgba(200, 200, 200, 0.4);
+    width: fit-content;
+    clear: right;
+    margin-left: 30px;
+}
